@@ -6,8 +6,8 @@
 " Then don't call init function
 function InitPlugins()
 	call plug#begin('~/.vim/plugged')
-		Plug 'prabirshrestha/vim-lsp'
-		Plug 'mattn/vim-lsp-settings'
+		"Plug 'prabirshrestha/vim-lsp'
+		"Plug 'mattn/vim-lsp-settings'
 		Plug 'christoomey/vim-tmux-navigator'
 	call plug#end()
 endfunction
@@ -34,11 +34,12 @@ set ruler
 set clipboard=unnamedplus
 
 " Appearance
-color desert
+color delek
 set termguicolors
 syntax on
 set guifont=CaskaydiaMono\ Nerd\ Font\ 16
 set cursorline
+set background=light
 
 " By default we don't use lsp
 function g:StartLsp()
