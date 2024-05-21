@@ -39,7 +39,7 @@ set termguicolors
 syntax on
 set guifont=CaskaydiaMono\ Nerd\ Font\ 16
 set cursorline
-set background=light
+set background=dark
 
 " By default we don't use lsp
 function g:StartLsp()
