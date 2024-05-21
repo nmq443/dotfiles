@@ -34,7 +34,7 @@ set ruler
 set clipboard=unnamedplus
 
 " Appearance
-color delek
+color desert
 set termguicolors
 syntax on
 set guifont=CaskaydiaMono\ Nerd\ Font\ 16
