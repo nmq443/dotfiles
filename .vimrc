@@ -59,3 +59,7 @@ function g:StartLsp()
 		autocmd User lsp_buffer_enabled call OnLspBufferEnabled()
 	augroup END
 endfunction
+
+" Keymap
+" Open file explorer
+nmap <C-n> :Lexplore30<CR>
