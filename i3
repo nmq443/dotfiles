@@ -1,0 +1,1 @@
+/home/quang/.config/i3
