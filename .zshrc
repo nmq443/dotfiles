@@ -143,3 +143,5 @@ export CPLUS_INCLUDE_PATH=/usr/include/c++/v1
 
 # Alias for qtcreator 
 alias qtcreator="~/Qt/Tools/QtCreator/bin/qtcreator"
+
+if [ "$TMUX" = "" ]; then tmux; fi
