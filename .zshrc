@@ -4,12 +4,11 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export TURTLEBOT3_MODEL=waffle
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-source /home/quang/.oh-my-zsh/custom/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -114,12 +113,9 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 
-# zsh-autosuggestion
-# source .oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE='/home/quang/micromamba/micromamba';
+export MAMBA_EXE='/home/quang/.local/bin/micromamba';
 export MAMBA_ROOT_PREFIX='/home/quang/micromamba';
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
@@ -129,7 +125,21 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
-
-# Alias micromamba to mamba/conda
+#
 alias conda="micromamba"
 alias mamba="micromamba"
+alias vim="nvim"
+alias clion="~/.local/share/JetBrains/Toolbox/scripts/clion"
+export EDITOR='nvim'
+alias tmuxifier='/home/quang/.tmux/plugins/tmuxifier/bin/tmuxifier'
+
+# nvm: for nodejs
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# This is for coc-clangd
+export CPLUS_INCLUDE_PATH=/usr/include/c++/v1
+
+# Alias for qtcreator 
+alias qtcreator="~/Qt/Tools/QtCreator/bin/qtcreator"
