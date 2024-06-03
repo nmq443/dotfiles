@@ -72,8 +72,8 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autocomplete
-  zsh-autosuggestions
+  #zsh-autocomplete
+  #zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -143,5 +143,7 @@ export CPLUS_INCLUDE_PATH=/usr/include/c++/v1
 
 # Alias for qtcreator 
 alias qtcreator="~/Qt/Tools/QtCreator/bin/qtcreator"
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
 
 if [ "$TMUX" = "" ]; then tmux; fi
