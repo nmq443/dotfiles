@@ -129,17 +129,8 @@ unset __mamba_setup
 alias conda="micromamba"
 alias mamba="micromamba"
 alias vim="nvim"
-alias clion="~/.local/share/JetBrains/Toolbox/scripts/clion"
 export EDITOR='nvim'
 alias tmuxifier='/home/quang/.tmux/plugins/tmuxifier/bin/tmuxifier'
-
-# nvm: for nodejs
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Alias for qtcreator 
-alias qtcreator="~/Qt/Tools/QtCreator/bin/qtcreator"
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
