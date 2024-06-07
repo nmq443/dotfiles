@@ -208,6 +208,20 @@ bindsym Ctrl+Print exec --no-startup-id maim --format=png | xclip -selection cli
 bindsym Ctrl+$mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip -selection clipboard -t image/png
 
+# Title format
+# give the focused window a prefix
+bindsym $mod+p title_format "Important | %title"
+
+# print all window titles bold
+for_window [class=".*"] title_format "<b>%title</b>"
+
+# print window titles of firefox windows red
+for_window [class="(?i)firefox"] title_format "<span foreground='red'>%title</span>"
+
+# Title icons
+# enable window icons for all windows
+for_window [all] title_window_icon on
+
 # Gaps
 gaps inner 12
 gaps outer 1
