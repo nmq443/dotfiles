@@ -6,8 +6,8 @@
 " Then don't call init function
 function InitPlugins()
 	call plug#begin('~/.vim/plugged')
-		"Plug 'prabirshrestha/vim-lsp'
-		"Plug 'mattn/vim-lsp-settings'
+		Plug 'prabirshrestha/vim-lsp'
+		Plug 'mattn/vim-lsp-settings'
 		Plug 'christoomey/vim-tmux-navigator'
 	call plug#end()
 endfunction
