@@ -60,6 +60,8 @@ function g:StartLsp()
 	augroup END
 endfunction
 
+call StartLsp()
+
 " Keymap
 " Open file explorer
 nmap <C-n> :Lexplore30<CR>
