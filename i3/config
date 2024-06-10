@@ -35,7 +35,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Redshift for night light color
-exec --no-startup-id redshift
+exec --no-startup-id redshift -O 4000
 
 # Feh for background image
 exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/bg.jpg
