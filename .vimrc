@@ -5,7 +5,7 @@
 " If don't want to use plugin but only vanilla vim
 " Then don't call init function
 function InitPlugins()
-	call plug#begin('~/.vim/plugged')
+	call plug#begin('C:\Users\delta\vimfiles\autoload\plugged')
 		Plug 'prabirshrestha/vim-lsp'
 		Plug 'mattn/vim-lsp-settings'
 		Plug 'christoomey/vim-tmux-navigator'
@@ -18,40 +18,45 @@ call InitPlugins()
 set number
 set relativenumber
 filetype plugin indent on
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop		=4
+set softtabstop	=4
+set shiftwidth	=4
 set backspace=indent,eol,start " backspace over everything
 set mouse=a
 set autoindent
 set wildmenu
 set hidden
-set is
+"set is
 set ignorecase
 set smartcase
-set gp=git\ grep\ -n
+"set gp=git\ grep\ -n
 set ruler
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 
 " Appearance
-color desert
-set termguicolors
 syntax on
-set guifont=CaskaydiaMono\ Nerd\ Font\ 16
+set guifont=CaskaydiaCove\ NFM:h24
+"set guifont=FixedSys:h24
 set cursorline
-set background=dark
+if has("gui_running")
+	set background=light
+else
+	set background=dark
+	set termguicolors
+    colorscheme desert
+endif
 
 " By default we don't use lsp
 function g:StartLsp()
 	function! OnLspBufferEnabled() abort
-			setlocal omnifunc=lsp#complete
-			setlocal signcolumn=yes
-			nmap <buffer> gi <plug>(lsp-definition)
-			nmap <buffer> gd <plug>(lsp-declaration)
-			nmap <buffer> gr <plug>(lsp-references)
-			nmap <buffer> gl <plug>(lsp-document-diagnostics)
-			nmap <buffer> <f2> <plug>(lsp-rename)
-			nmap <buffer> <f3> <plug>(lsp-hover)
+		setlocal omnifunc=lsp#complete
+		setlocal signcolumn=yes
+		nmap <buffer> gi <plug>(lsp-definition)
+		nmap <buffer> gd <plug>(lsp-declaration)
+		nmap <buffer> gr <plug>(lsp-references)
+		nmap <buffer> gl <plug>(lsp-document-diagnostics)
+		nmap <buffer> <f2> <plug>(lsp-rename)
+		nmap <buffer> <f3> <plug>(lsp-hover)
 	endfunction
 
 	augroup lsp_install
