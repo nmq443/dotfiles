@@ -4,6 +4,9 @@
 " Plugins
 " If don't want to use plugin but only vanilla vim
 " Then don't call init function
+" To install vim-plug:
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
 function InitPlugins()
 	call plug#begin('C:\Users\delta\vimfiles\autoload\plugged')
 		Plug 'prabirshrestha/vim-lsp'
