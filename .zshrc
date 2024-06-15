@@ -113,24 +113,7 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE='/home/quang/.local/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/home/quang/micromamba';
-__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
-else
-    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
-fi
-unset __mamba_setup
-# <<< mamba initialize <<<
-#
-alias conda="micromamba"
-alias mamba="micromamba"
-alias vim="nvim"
-alias clion="~/.local/share/JetBrains/Toolbox/scripts/clion"
-export EDITOR='nvim'
+export EDITOR='vim'
 alias tmuxifier='/home/quang/.tmux/plugins/tmuxifier/bin/tmuxifier'
 
 # nvm: for nodejs
@@ -140,7 +123,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # Alias for qtcreator 
 alias qtcreator="~/Qt/Tools/QtCreator/bin/qtcreator"
-
-export PATH="$PATH:/opt/nvim-linux64/bin"
-
-# if [ "$TMUX" = "" ]; then tmux; fi
