@@ -8,7 +8,7 @@
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 "
 function InitPlugins()
-	call plug#begin('C:\Users\delta\vimfiles\autoload\plugged')
+	call plug#begin('~/.vim/plugged')
 		Plug 'prabirshrestha/vim-lsp'
 		Plug 'mattn/vim-lsp-settings'
 		Plug 'christoomey/vim-tmux-navigator'
