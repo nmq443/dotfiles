@@ -5,7 +5,6 @@
 " If don't want to use plugin but only vanilla vim
 " Then don't call init function
 " To install vim-plug:
-" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 "
 function InitPlugins()
 	call plug#begin('~/.vim/plugged')
@@ -34,7 +33,7 @@ set ignorecase
 set smartcase
 "set gp=git\ grep\ -n
 set ruler
-set clipboard+=unnamedplus
+set clipboard+=unnamed
 
 " Appearance
 syntax on
