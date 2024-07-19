@@ -4,7 +4,7 @@
 " Plugins
 " If don't want to use plugin but only vanilla vim
 " Then don't call init function
-" To install vim-plug:
+" To install vim-plug: https://github.com/junegunn/vim-plug
 "
 function InitPlugins()
 	call plug#begin('~/.vim/plugged')
