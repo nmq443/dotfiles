@@ -1,6 +1,10 @@
 #!/bin/sh
 
 # install applications
+
+sudo apt update
+sudo apt upgrade -y
+
 sh ./install-neovim.sh
 sh ./install-tmux.sh
 sh ./install-i3wm.sh
